@@ -4,12 +4,18 @@
 }
 
 body{
-    background-color: #8B9375;
+    background-image: url("../images/background.svg");
+    background-size: cover;
 }
 
-#div_1{
-    width: 50%;
+#section_1{
+    width: 35%;
     float: right;
     height: 100vh;
-    background-color: #CF2B1F;
+    background-color: #F2F2F2;
+    box-shadow: -10px 0 25px #400101,
+    10px 0 25px #400101;
+    border-radius: 50% / 500px 0 0 500px;
+    align-content: center;
+    text-align: center;
 }
