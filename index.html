@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Sobre la pagina... -->
+        <meta name="author" content="Sebastián Mantilla"/>
+        <meta name="description" content="Página web de Yu-Gi-Oh! juego de cartas coleccionables."/>
+        <meta name="keywords" content="Yu-Gi-Oh, cards, games, juego de cartas"/>
+        <title>Yu-Gi-Oh! cards</title>
+
+        <!-- Herramientas adicionales necesarias para el documento -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Estilos que usa el documento -->
+        <link rel="icon" type="images/x-icon" href="./images/icon_icon.ico"/>
+        <link rel="stylesheet" type="text/css" href="./CSS/index.css"/>
+    </head>
+    <body>
+        <main>
+            <div id="div_1">
+                <header>
+                    <h1>Inicio de Sesión</h1>
+                </header>
+                <main>
+                    <div>
+                        <form action="./HTML/home_page.html" method="post" enctype="multipart/form-data" id="form">
+                            <label for="username" class="text">Correo electrónico</label><br/>
+                            <input type="email" name="user" placeholder="Correo electónico" inputmode="email" autocomplete="off" required id="username"/><br/>
+
+                            <label for="password" class="text">Contraseña</label><br/>
+                            <input type="password" name="password" placeholder="Contraseña" inputmode="verbatim" autocomplete="off" required minlength="6" id="password"/><br/>
+
+                            <input type="submit" value="DUEL!" id="go"/><br/>
+                        </form>
+                    </div>
+                </main>
+                <footer>
+                    <a href="./HTML/register.html" id="register">¿No tienes cuenta? ¡Regístrate y juega!</a><br/>
+                </footer>
+            </div>
+        </main>
+    </body>
+</html>
