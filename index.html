@@ -7,7 +7,7 @@
         <meta name="author" content="Sebastián Mantilla"/>
         <meta name="description" content="Página web de Yu-Gi-Oh! juego de cartas coleccionables."/>
         <meta name="keywords" content="Yu-Gi-Oh, cards, games, juego de cartas"/>
-        <title>Yu-Gi-Oh! cards</title>
+        <title>Yu-Gi-Oh! login</title>
 
         <!-- Herramientas adicionales necesarias para el documento -->
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -16,30 +16,47 @@
         <!-- Estilos que usa el documento -->
         <link rel="icon" type="images/x-icon" href="./images/icon_icon.ico"/>
         <link rel="stylesheet" type="text/css" href="./CSS/index.css"/>
-    </head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+        </style>
     <body>
-        <main>
-            <section id="section_1">
-                <header>
-                    <h1>Inicio de Sesión</h1>
-                </header>
-                <main>
-                    <div>
-                        <form action="./HTML/home_page.html" method="post" enctype="multipart/form-data" id="form">
-                            <label for="username" class="text">Correo electrónico</label><br/>
-                            <input type="email" name="user" placeholder="Correo electónico" inputmode="email" autocomplete="off" required id="username"/><br/>
-
-                            <label for="password" class="text">Contraseña</label><br/>
-                            <input type="password" name="password" placeholder="Contraseña" inputmode="verbatim" autocomplete="off" required minlength="6" id="password"/><br/>
-
-                            <input type="submit" value="DUEL!" id="go"/><br/>
-                        </form>
+        <div id="content">
+            <div id="forms_content">
+                <section id="form_left">
+                    <div class="tab">
+                        <div class="tab_inner">
+                            <button class="tab_buttons" id="index1">Iniciar sesión</button>
+                        </div>
+                        <div class="tab_inner">
+                            <a href="./HTML/register.html">
+                                <button  class="tab_buttons">Registrar</button>
+                            </a>
+                        </div>
                     </div>
-                </main>
-                <footer>
-                    <a href="./HTML/register.html" id="register">¿No tienes cuenta? ¡Regístrate y juega!</a><br/>
-                </footer>
-            </section>
-        </main>
+                    <form action="./HTML/home_page.html" method="post" class="form_detail" enctype="multipart/form-data">
+                        <div class="form_row">
+                            <label class="form_row_inner">
+                                <input type="email" name="user" inputmode="email" autocomplete="on" required class="input_text" id="email"/>
+                                <span class="label">Email</span>
+                                <span class="border"></span>
+                            </label>
+                        </div>
+                        <div class="form_row">
+                            <label class="form_row_inner">
+                                <input type="password" name="password" inputmode="verbatim" autocomplete="on" required minlength="6" class="input_text" id="password"/>
+                                <span class="label">Contraseña</span>
+                                <span class="border"></span>
+                            </label>
+                        </div>
+                        <div class="form_row_last">
+                            <input type="submit" name="login" value="DUEL!" class="login"/>
+                        </div>
+                    </form>
+                </section>
+                <section id="form_right">
+                    <img src="./images/logo.svg" alt="Logo" height="100%"/>
+                </section>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Sobre la pagina... -->
+    <meta name="author" content="Sebastián Mantilla"/>
+    <meta name="description" content="Página web de Yu-Gi-Oh! juego de cartas coleccionables."/>
+    <meta name="keywords" content="Yu-Gi-Oh, cards, games, juego de cartas"/>
+    <title>Yu-Gi-Oh! register</title>
+
+    <!-- Herramientas adicionales necesarias para el documento -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Estilos que usa el documento -->
+    <link rel="icon" type="images/x-icon" href="../images/icon_icon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+    </style>
+<body>
+<div id="content">
+    <div id="forms_content">
+        <section id="form_left">
+            <div class="tab">
+                <div class="tab_inner">
+                    <a href="../index.html">
+                        <button class="tab_buttons">Iniciar sesión</button>
+                    </a>
+                </div>
+                <div class="tab_inner">
+                    <button  class="tab_buttons" id="index1">Registrar</button>
+                </div>
+            </div>
+            <form action="../index.html" method="post" class="form_detail" enctype="multipart/form-data">
+                <div class="form_row">
+                    <label class="form_row_inner">
+                        <input type="text" name="username" inputmode="text" autocomplete="name" required class="input_text" id="username"/>
+                        <span class="label">Nombre de usuario</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <div class="form_row">
+                    <label class="form_row_inner">
+                        <input type="email" name="user" inputmode="email" autocomplete="off" required class="input_text" id="email"/>
+                        <span class="label">Email</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <div class="form_row">
+                    <label class="form_row_inner">
+                        <input type="password" name="password" inputmode="verbatim" autocomplete="off" required minlength="6" class="input_text" id="password"/>
+                        <span class="label">Contraseña</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <div class="form_row_last">
+                    <input type="submit" name="register" value="Registrarse" class="register"/>
+                </div>
+            </form>
+        </section>
+        <section id="form_right">
+            <img src="../images/logo.svg" alt="Logo" height="100%"/>
+        </section>
+    </div>
+</div>
+</body>
+</html>

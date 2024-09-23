@@ -1,21 +1,178 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
-    background-image: url("../images/background.svg");
-    background-size: cover;
+    margin: 0;
 }
 
-#section_1{
-    width: 35%;
-    float: right;
+#content{
+    width: 100vw;
     height: 100vh;
-    background-color: #F2F2F2;
-    box-shadow: -10px 0 25px #400101,
-    10px 0 25px #400101;
-    border-radius: 50% / 500px 0 0 500px;
-    align-content: center;
-    text-align: center;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.45)), url("../images/background.svg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms_content{
+    background: #FFF;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px 0 #400101;
+    font-family: "ABeeZee", monospace, sans-serif;
+    position: relative;
+    display: flex;
+}
+
+#forms_content #form_left{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    background: #8C8C8C;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#forms_content .tab{
+    margin: 5px 0 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#forms_content .tab .tab_inner{
+    width: 100%;
+}
+
+#forms_content .tab .tab_buttons{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: "ABeeZee", monospace, sans-serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    padding-bottom: 22px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+#forms_content .tab .tab_buttons:active{
+    font-weight: bold;
+    color: #F2F2F2;
+    border-bottom-color: #F2CAB3;
+}
+
+#forms_content .tab #index1{
+    color: #F2F2F2;
+    font-weight: bold;
+    border-bottom-color: #F2CAB3;
+}
+
+#forms_content .form_detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+
+#forms_content .form_row{
+    position: relative;
+}
+
+#forms_content .form_row .form_row_inner{
+    position: relative;
+    width: 100%;
+}
+
+#forms_content .form_row .form_row_inner .label{
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    font-size: 1.15rem;
+    color: #F2F2F2;
+    font-weight: normal;
+    transform-origin: 0 0;
+    transition: all .2s ease;
+}
+
+#forms_content .form_row .form_row_inner .border{
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #D9C873;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .15s ease;
+}
+
+#forms_content .form_detail .input_text{
+    margin-bottom: 31px;
+}
+
+#forms_content .form_detail input{
+    width: 100%;
+    padding: 0 10px 15px 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    appearance: unset;
+    outline: none;
+    font-size: 1.15rem;
+    color: #FFFFFF;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+#forms_content .form_detail .form_row .input_text:focus{
+    border-bottom: 1px solid #D9C873;
+    background: transparent;
+}
+
+#forms_content .form_detail .form_row .input_text:focus + .label,
+#forms_content .form_detail .form_row .input_text:valid + .label{
+    transform: translateY(-26px) scale(1);
+}
+#forms_content .form_detail .form_row .input_text:focus + .border,
+#forms_content .form_detail .form_row .input_text:valid + .border{
+    transform: scaleX(1);
+}
+
+#forms_content .form_row_last{
+    display: flex;
+    justify-content: center;
+}
+
+#forms_content .form_detail .form_row_last input{
+    padding: 11px;
+}
+
+#forms_content .form_detail .register,
+#forms_content .form_detail .login{
+    background: #A63F78;
+    color: #333;
+    border-radius: 5px;
+    width: 16rem;
+    border: none;
+    margin: 5px 0 50px 0;
+    cursor: pointer;
+    font-family: "ABeeZee", monospace, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#forms_content .form_detail .register:hover,
+#forms_content .form_detail .login:hover{
+    background: #F2F2F2;
+}
+
+
+
+#forms_content #form_right img{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
