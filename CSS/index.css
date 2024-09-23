@@ -30,7 +30,7 @@ body{
     padding: 30px 0;
     position: relative;
     width: 100%;
-    background: #8C8C8C;
+    background: #A63F03;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
@@ -60,14 +60,14 @@ body{
 
 #forms_content .tab .tab_buttons:active{
     font-weight: bold;
-    color: #F2F2F2;
-    border-bottom-color: #F2CAB3;
+    color: #F2E9CE;
+    border-bottom-color: #F2EC99;
 }
 
 #forms_content .tab #index1{
-    color: #F2F2F2;
+    color: #F2E9CE;
     font-weight: bold;
-    border-bottom-color: #F2CAB3;
+    border-bottom-color: #F2EC99;
 }
 
 #forms_content .form_detail{
@@ -104,7 +104,7 @@ body{
     left: 0;
     height: 1px;
     width: 100%;
-    background: #D9C873;
+    background: #F2EC99;
     transform: scaleX(0);
     transform-origin: 0 0;
     transition: all .15s ease;
@@ -129,7 +129,7 @@ body{
 }
 
 #forms_content .form_detail .form_row .input_text:focus{
-    border-bottom: 1px solid #D9C873;
+    border-bottom: 1px solid #F2EC99;
     background: transparent;
 }
 
@@ -153,8 +153,8 @@ body{
 
 #forms_content .form_detail .register,
 #forms_content .form_detail .login{
-    background: #A63F78;
-    color: #333;
+    background: #594011;
+    color: #F2F2F2;
     border-radius: 5px;
     width: 16rem;
     border: none;
@@ -168,9 +168,8 @@ body{
 #forms_content .form_detail .register:hover,
 #forms_content .form_detail .login:hover{
     background: #F2F2F2;
+    color: #594011;
 }
-
-
 
 #forms_content #form_right img{
     border-top-right-radius: 8px;

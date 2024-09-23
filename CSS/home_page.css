@@ -1,0 +1,15 @@
+#contenedor #content .contain .contain_inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #F2E9CE #F28705;
+    max-height: 525px;
+}
+
+#contenedor #content .contain .contain_inner img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
