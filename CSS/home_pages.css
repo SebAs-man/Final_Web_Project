@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 0 32px;
 }
 
 #contenedor #profile{
@@ -33,10 +33,11 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 1rem;
-    height: 15vh;
+    padding: 20px;
+    height: 15%;
     font-size: 1.35rem;
     font-weight: normal;
+    color: #F2F2F2;
 }
 
 #contenedor #profile .image_contain{
@@ -59,7 +60,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 3rem 0;
+    margin: 45px 0;
     height: 100%;
 }
 
@@ -83,9 +84,10 @@ body{
 }
 
 #contenedor #content{
-    justify-content: space-around;
-    width: 50vw;
+    justify-content: space-between;
+    width: 50%;
     background: transparent;
+    margin: 45px 0;
 }
 
 #contenedor #content .logo_contain{
@@ -103,32 +105,80 @@ body{
 }
 
 #contenedor #content .contain{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #F2F2F2;
+    height: 100%;
+    margin: 40px 0;
+    padding: 30px 10px;
+    border-radius: 10%;
+    background: #F2E9CE;
     color: #00010D;
+    border-style: outset;
 }
 
-#contenedor #content .redes{
+#contenedor #content .contain .contain_inner{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    max-height: 455px;
+}
+
+#contenedor #content .contain .contain_inner img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contenedor #content .container_redes{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-#contenedor #content .redes .contain_red .red_botons{
-    background: transparent;
-    border: 2px solid #F2EC99;
+#contenedor #content .container_redes a{
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
-    padding: 10px;
-    display: inline-block;
-    font-family: "ABeeZee", monospace, sans-serif;
-    color: #F2F2F2;
-    font-size: 1rem;
-    font-weight: normal;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #F2EC99;
-    transition: ease-out 0.4s;
+    text-align: center;
+    background-color: #F2F2F2;
+    box-shadow: 3px 3px 4px 0 rgba(242, 242, 242, .5);
+    margin: 0 2.5vw;
+}
+
+#contenedor #content .container_redes a::before{
+    display: block;
+    margin: 13px 0;
+    transition: all .3s ease-in-out;
+}
+
+#contenedor #content .container_redes #one::before{
+    content: url("../images/fb.ico");
+}
+
+#contenedor #content .container_redes #two::before{
+    content: url("../images/dc.ico");
+}
+
+#contenedor #content .container_redes #three::before{
+    content: url("../images/ig.ico");
+}
+
+#contenedor #content .container_redes #four::before{
+    content: url("../images/x.ico");
+}
+
+#contenedor #content .container_redes #five::before{
+    content: url("../images/ytb.ico");
+}
+
+#contenedor #content .container_redes a:hover::before{
+    margin-top: -37px;
+}
+
+#contenedor #content .container_redes a::after{
+    content: url("../images/share.ico");
+    display: block;
 }
 
 #contenedor #menubar{
