@@ -81,7 +81,7 @@ body{
 }
 
 #contenedor .tab .tab_buttons:hover{
-    box-shadow: inset 0 0 0 50px #F2EC99;
+    box-shadow: inset 0 0 0 3.2rem #F2EC99;
     color: #00010D;
 }
 
