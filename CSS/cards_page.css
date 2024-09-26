@@ -1,0 +1,13 @@
+#contenedor #profile{
+    border-bottom-right-radius: 1rem 25%;
+}
+
+#contenedor #content .contain{
+    width: 50%;
+    background-color: rgba(242, 233, 206, .75);
+}
+
+#contenedor #content .contain img{
+    height: 23rem;
+}
+

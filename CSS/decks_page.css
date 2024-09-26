@@ -1,7 +1,3 @@
-#contenedor #content .contain .contain_inner{
-    border-bottom: 1px solid #00010D;
-}
-
 #contenedor #profile .tab .search_contain{
     display: flex;
     justify-content: center;
@@ -9,24 +5,16 @@
     height: 55px;
 }
 
-#contenedor #content .contain .contain_inner{
+#contenedor #content .contain ul{
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #F2E9CE #F28705;
-    max-height: 525px;
-}
-
-#contenedor #content .contain .contain_inner ul{
     list-style: none;
     display: grid;
     row-gap: 2px;
-    grid-column: 1;
+    grid-template-columns: 1fr;
     padding-left: 0;
 }
 
-#contenedor #content .contain .contain_inner ul li{
+#contenedor #content .contain ul li{
     display: flex;
     justify-content: space-between;
     background-color: rgba(64, 1, 1, .25);
@@ -34,23 +22,23 @@
     padding: 10px;
 }
 
-#contenedor #content .contain .contain_inner ul li:hover{
+#contenedor #content .contain ul li:hover{
     background-color: rgba(64, 1, 1, .75);
     color: #F2E9CE;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .text_xs{
+#contenedor #content .contain .overflow_row .text_xs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .text_xs .text_title{
+#contenedor #content .contain .overflow_row .text_xs .text_title{
     font-weight: bold;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .text_xs .text_info{
+#contenedor #content .contain .overflow_row .text_xs .text_info{
     font-size: 14px;
     display: grid;
     width: 160px;
@@ -58,13 +46,13 @@
     column-gap: 5px;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .grid{
+#contenedor #content .contain .overflow_row .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .grid button{
+#contenedor #content .contain .overflow_row .grid button{
     width: 36px;
     height: 36px;
     text-align: center;
@@ -77,18 +65,18 @@
     overflow: hidden;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .grid button:hover{
+#contenedor #content .contain .overflow_row .grid button:hover{
     background-color: #703b33;
     color: #F2E9CE;
     overflow: visible;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .grid .b3:hover{
+#contenedor #content .contain .overflow_row .grid .b3:hover{
     background-color: #E90014;
     color: #703b33;
 }
 
-#contenedor #content .contain .contain_inner .overflow_row .grid .grid_buttons .grid_img{
+#contenedor #content .contain .overflow_row .grid .grid_buttons .grid_img{
     width: 100%;
     height: 100%;
 }

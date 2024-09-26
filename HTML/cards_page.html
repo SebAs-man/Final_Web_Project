@@ -25,169 +25,204 @@
     </style>
 </head>
 <body>
-<div id="contenedor">
-    <div id="profile" class="contenedor_inner">
-        <header class="title">
-            <h1>Buscar cartas</h1>
-        </header>
-        <main class="tab">
-            <form method="get" class="search_contain">
-                <label id="search_inner">
-                    <input type="search" name="criterio" inputmode="text" autocomplete="on" class="input_text" id="search"/>
-                </label>
-                <label id="type_card">
+    <div id="contenedor">
+        <div id="profile" class="contenedor_inner">
+            <header class="title">
+                <h1>Buscar cartas</h1>
+            </header>
+            <main class="tab">
+                <form method="post" enctype="multipart/form-data" class="search_contain">
+                    <label class="full_line" id="search_inner">
+                        <input type="search" name="criterio" inputmode="text" autocomplete="on" class="input_text" id="search"/>
+                    </label>
                     <span>Carta:</span>
-                    <select name="effect">
-                        <option value="none"></option>
-                        <option value="Monster">Monstruo</option>
-                        <option value="Spell">Mágica</option>
-                        <option value="Trap">Trampa</option>
-                    </select>
-                    <select name="type_C">
-                        <option value="none"></option>
-                        <option value="Normal">Normal</option>
-                        <option value="Effect">Efecto</option>
-                        <option value="Ritual">Ritual</option>
-                        <option value="Fusion">Fusón</option>
-                        <option value="Synchro">Sincronía</option>
-                        <option value="XYZ">XYZ</option>
-                        <option value="Link">Enlace</option>
-                        <option value="Pendulum">Péndulo</option>
-                    </select>
-                </label>
-                <label id="type_monster">
+                    <label class="content0">
+                        <select name="effect">
+                                <option value="">...</option>
+                                <option value="Monster">Monstruo</option>
+                                <option value="Spell">Mágica</option>
+                                <option value="Trap">Trampa</option>
+                        </select>
+                    </label>
+                    <label class="content1">
+                        <select name="type_C">
+                            <option value="">...</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Effect">Efecto</option>
+                            <option value="Ritual">Ritual</option>
+                            <option value="Fusion">Fusón</option>
+                            <option value="Synchro">Sincronía</option>
+                            <option value="XYZ">XYZ</option>
+                            <option value="Link">Enlace</option>
+                            <option value="Pendulum">Péndulo</option>
+                        </select>
+                    </label>
                     <span>Tipo:</span>
-                    <select name="type_M">
-                        <option value="none"></option>
-                        <option value="Lz">Lanzador de conjuros</option>
-                        <option value="D">Dragón</option>
-                        <option value="Z">Zombi</option>
-                        <option value="G">Guerrero</option>
-                        <option value="Gb">Guerrero-bestia</option>
-                        <option value="B">Bestia</option>
-                        <option value="Ba">Bestia alada</option>
-                        <option value="Dem">Demonio</option>
-                        <option value="H">Hada</option>
-                        <option value="I">Insecto</option>
-                        <option value="Din">Dinosaurio</option>
-                        <option value="R">Reptil</option>
-                        <option value="Pz">Pèz</option>
-                        <option value="S">Serpiente marina</option>
-                        <option value="A">Aqua</option>
-                        <option value="Piro">Piro</option>
-                        <option value="T">Trueno</option>
-                        <option value="Rock">Roca</option>
-                        <option value="P">Planta</option>
-                        <option value="M">Máquina</option>
-                        <option value="Ps">Psíquico</option>
-                        <option value="Bd">Bestia divina</option>
-                        <option value="W">Wrym</option>
-                        <option value="C">Ciberso</option>
-                        <option value="Il">Ilusión</option>
-                    </select>
-                    <select name="sub_type_M">
-                        <option value="none"></option>
-                        <option value="Toon">Toon</option>
-                        <option value="Spirit">Spirit</option>
-                        <option Value="Union">Unión</option>
-                        <option value="Gemini">Géminis</option>
-                        <option value="Tuner">Cantante</option>
-                    </select>
-                </label>
-                <label id="attribute">
-                    <span>Atributo:</span>
-                    <select name="att">
-                        <option value="none"></option>
-                        <option value="dark">Oscuridad</option>
-                        <option value="light">Luz</option>
-                        <option value="earth">Tierra</option>
-                        <option value="water">Agua</option>
-                        <option value="fire">Fuego</option>
-                        <option value="wind">Viento</option>
-                        <option value="divine">Divinidad</option>
-                    </select>
-                </label>
-                <label id="level">
-                    <input type="number" inputmode="numeric" name="lvl_min" min="0" autocomplete="off" pattern="[0-9]+">
-                    <span class="lvl">≤ Lvl/Rank ≤</span>
-                    <input type="number" inputmode="numeric" name="lvl_max" max="13" autocomplete="off" pattern="[0-9]+">
-                </label>
-                <label id="atq">
-                    <input type="number" inputmode="numeric" name="lvl_min" min="0" autocomplete="off">
+                    <label class="content0">
+                        <select name="type_M">
+                            <option value="">...</option>
+                            <option value="Lz">Lanzador de conjuros</option>
+                            <option value="D">Dragón</option>
+                            <option value="Z">Zombi</option>
+                            <option value="G">Guerrero</option>
+                            <option value="Gb">Guerrero-bestia</option>
+                            <option value="B">Bestia</option>
+                            <option value="Ba">Bestia alada</option>
+                            <option value="Dem">Demonio</option>
+                            <option value="H">Hada</option>
+                            <option value="I">Insecto</option>
+                            <option value="Din">Dinosaurio</option>
+                            <option value="R">Reptil</option>
+                            <option value="Pz">Pèz</option>
+                            <option value="S">Serpiente marina</option>
+                            <option value="A">Aqua</option>
+                            <option value="Piro">Piro</option>
+                            <option value="T">Trueno</option>
+                            <option value="Rock">Roca</option>
+                            <option value="P">Planta</option>
+                            <option value="M">Máquina</option>
+                            <option value="Ps">Psíquico</option>
+                            <option value="Bd">Bestia divina</option>
+                            <option value="W">Wrym</option>
+                            <option value="C">Ciberso</option>
+                            <option value="Il">Ilusión</option>
+                        </select>
+                    </label>
+                    <label class="content1">
+                        <select name="sub_type_M">
+                            <option value="">...</option>
+                            <option value="Toon">Toon</option>
+                            <option value="Spirit">Spirit</option>
+                            <option Value="Union">Unión</option>
+                            <option value="Gemini">Géminis</option>
+                            <option value="Tuner">Cantante</option>
+                        </select>
+                    </label>
+                    <span>Atrib:</span>
+                    <label id="attb">
+                        <select name="att">
+                            <option value="">...</option>
+                            <option value="dark">Oscuridad</option>
+                            <option value="light">Luz</option>
+                            <option value="earth">Tierra</option>
+                            <option value="water">Agua</option>
+                            <option value="fire">Fuego</option>
+                            <option value="wind">Viento</option>
+                            <option value="divine">Divinidad</option>
+                        </select>
+                    </label>
+                    <label class="content_input">
+                        <input class="input_number" type="number" inputmode="numeric" name="lvl_min" min="0" max="13" autocomplete="off" pattern="[0-9]+">
+                    </label>
+                    <span class="lvl">≤ Lvl ≤</span>
+                    <label class="content_input">
+                        <input class="input_number" type="number" inputmode="numeric" name="lvl_max" min="0" max="13" autocomplete="off" pattern="[0-9]+">
+                    </label>
+                    <label class="content_input">
+                        <input type="number" inputmode="numeric" name="atq_min" min="0" max="5000" autocomplete="off">
+                    </label>
                     <span class="lvl">≤ Atk ≤</span>
-                    <input type="number" inputmode="numeric" name="lvl_max" max="5000" autocomplete="off">
-                </label>
-                <label id="def">
-                    <input type="number" inputmode="numeric" name="lvl_min" min="0" autocomplete="off">
+                    <label class="content_input">
+                        <input type="number" inputmode="numeric" name="atq_max" min="0" max="5000" autocomplete="off">
+                    </label>
+                    <label class="content_input">
+                        <input type="number" inputmode="numeric" name="def_min" min="0" max="5000" autocomplete="off">
+                    </label>
                     <span class="lvl">≤ Def ≤</span>
-                    <input type="number" inputmode="numeric" name="lvl_max" max="5000" autocomplete="off">
-                </label>
-                <div id="buscador">
-                    <button id="imagen1">
+                    <label class="content_input">
+                        <input type="number" inputmode="numeric" name="def_max" min="0" max="5000" autocomplete="off">
+                    </label>
+                    <button type="button" class="button_pass" id="button_left">
                         <img src="../images/left.ico" alt="back">
                     </button>
-                    <input type="submit" value="Buscar">
-                    <button id="imagen2">
+                    <button type="submit" class="tab_buttons" id="button_search">
+                        <img src="../images/search.ico" alt="Buscar"/>
+                    </button>
+                    <button type="button" class="button_pass" id="button_right">
                         <img src="../images/right.ico" alt="next">
                     </button>
+                </form>
+                <div class="cards">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
                 </div>
-            </form>
-        </main>
-        <footer>
-            <div class="cards_contain">
-                <div class="cards"></div>
-                <form class="format_contain">
-                    <label id="format">
+            </main>
+            <footer class="footer">
+                <form id="format_contain">
+                    <label>
                         <select name="format">
                             <option value="tcg">TCG</option>
                             <option value="ocg">OCG</option>
                         </select>
                     </label>
                 </form>
-            </div>
-        </footer>
+            </footer>
+        </div>
+        <div id="content" class="contenedor_inner">
+            <header class="logo_contain">
+                <img src="../images/yugioh.png" alt="logo"/>
+            </header>
+            <main class="contain">
+                <section id="img_card">
+                    <img src="https://images.ygoprodeck.com/images/cards/40908371.jpg" id="carta" alt="Img_card">
+                </section>
+                <section id="desc_card">
+                    <span>1 Cantante + 1+ Monstruos Normales que no sean Cantantes</span>
+                    <p>Si esta carta es Invocada de Modo Especial:
+                        hasta el final del próximo turno, ningún jugador puede seleccionar monstruos
+                        Dragón que controles en este momento para efectos de cartas,
+                        y además tampoco pueden ser destruidos por efectos de cartas.
+                        Una vez por turno, durante tu Standby Phase: puedes seleccionar 1 Monstruo Normal en tu Cementerio;
+                        Invócalo de Modo Especial.
+                    </p>
+                </section>
+            </main>
+            <footer class="container_redes">
+                <div class="container_redes_inner">
+                    <a href="https://www.facebook.com/" id="one"></a>
+                    <a href="https://discord.com/login" id="two"></a>
+                    <a href="https://www.instagram.com/" id="three"></a>
+                    <a href="https://x.com/?lang=es" id="four"></a>
+                    <a href="https://www.youtube.com/" id="five"></a>
+                </div>
+            </footer>
+        </div>
+        <div id="menubar" class="contenedor_inner">
+            <header class="title">
+                <h1>Página de cartas</h1>
+            </header>
+            <main class="tab">
+                <div class="tab_inner">
+                    <a href="../HTML/home_page.html">
+                        <button class="tab_buttons">Ver Perfil</button>
+                    </a>
+                </div>
+                <div class="tab_inner">
+                    <a href="../HTML/decks_page.html">
+                        <button class="tab_buttons">Ver Decks</button>
+                    </a>
+                </div>
+                <div class="tab_inner">
+                    <a href="../HTML/cards_page.html">
+                        <button class="tab_buttons">Ver Cartas</button>
+                    </a>
+                </div>
+            </main>
+        </div>
     </div>
-    <div id="content" class="contenedor_inner">
-        <header class="logo_contain">
-            <img src="../images/yugioh.png" alt="logo"/>
-        </header>
-        <main class="contain">
-            <div class="contain_inner">
-                hola
-            </div>
-        </main>
-        <footer class="container_redes">
-            <div class="container_redes_inner">
-                <a href="https://www.facebook.com/" id="one"></a>
-                <a href="https://discord.com/login" id="two"></a>
-                <a href="https://www.instagram.com/" id="three"></a>
-                <a href="https://x.com/?lang=es" id="four"></a>
-                <a href="https://www.youtube.com/" id="five"></a>
-            </div>
-        </footer>
-    </div>
-    <div id="menubar" class="contenedor_inner">
-        <header class="title">
-            <h1>Página de cartas</h1>
-        </header>
-        <main class="tab">
-            <div class="tab_inner">
-                <a href="../HTML/home_page.html">
-                    <button class="tab_buttons">Ver Perfil</button>
-                </a>
-            </div>
-            <div class="tab_inner">
-                <a href="../HTML/decks_page.html">
-                    <button class="tab_buttons">Ver Decks</button>
-                </a>
-            </div>
-            <div class="tab_inner">
-                <a href="../HTML/cards_page.html">
-                    <button class="tab_buttons">Ver Cartas</button>
-                </a>
-            </div>
-        </main>
-    </div>
-</div>
 </body>
 </html>
